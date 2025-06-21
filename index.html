@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up / Log-In Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container active" id="sign-up-form">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" required>
+            <div class="error" id="full-name-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="email-sign-up">Email Address</label>
+            <input type="email" id="email-sign-up" required>
+            <div class="error" id="email-sign-up-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="password-sign-up">Password</label>
+            <div class="password-container">
+                <input type="password" id="password-sign-up" required>
+                <i class="fas fa-eye" id="toggle-password-sign-up"></i>
+            </div>
+            <div class="error" id="password-sign-up-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+                <input type="password" id="confirm-password" required>
+                <i class="fas fa-eye" id="toggle-confirm-password"></i>
+            </div>
+            <div class="error" id="confirm-password-error"></div>
+        </div>
+        <button class="btn" onclick="signUp()">Sign Up</button>
+        <div class="divider">
+            <hr>
+            <span>or</span>
+            <hr>
+        </div>
+        <div class="social-login">
+            <button class="btn google"><i class="fab fa-google"></i> Continue with Google</button>
+            <button class="btn facebook"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+        </div>
+        <div class="link">
+            <a href="#" onclick="showLogInForm()">Already have an account? Log In</a>
+        </div>
+    </div>
+
+    <div class="container hidden" id="log-in-form" style="display: none;">
+        <h2>Log In</h2>
+        <div class="form-group">
+            <label for="email-log-in">Email Address</label>
+            <input type="email" id="email-log-in" required>
+            <div class="error" id="email-log-in-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="password-log-in">Password</label>
+            <div class="password-container">
+                <input type="password" id="password-log-in" required>
+                <i class="fas fa-eye" id="toggle-password-log-in"></i>
+            </div>
+            <div class="error" id="password-log-in-error"></div>
+        </div>
+        <button class="btn" onclick="logIn()">Log In</button>
+        <div class="link">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="divider">
+            <hr>
+            <span>or</span>
+            <hr>
+        </div>
+        <div class="social-login">
+            <button class="btn google"><i class="fab fa-google"></i> Continue with Google</button>
+            <button class="btn facebook"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+        </div>
+        
+        <div class="link">
+            <a href="#" onclick="showSignUpForm()">Don't have an account? Sign Up</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
