@@ -50,7 +50,6 @@ This single‐page component combines both Sign Up and Log In workflows. It demo
    - Dynamic feedback: adds/removes classes to show errors or success  
 
 ## 🚀 Potential Next Steps  
-- Add a “show/hide password” icon within password fields  
 - Integrate real authentication endpoints (REST or GraphQL)  
 - Implement persistent state with localStorage or cookies  
 - Introduce a light/dark theme toggle using CSS variables  
